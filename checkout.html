@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON META ICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!--=============== REMIX ICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== FAVICON ICONS ===============-->
+    <script src="https://kit.fontawesome.com/e48d166edc.js" crossorigin="anonymous"></script>
+
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles_phones.css">
+    <link rel="stylesheet" href="css/styles_tablets.css">
+<link rel="icon" type="image/png" href="images/LogoIcon.png">
+    <title>Plantiverse</title>
+</head>
+
+<body background="images/home.png" class="bg_img">
+    <!--==================== HEADER ====================-->
+    <nav class="nav">
+        <ul class="nav__list">
+            <li><a href="index.html" class="nav__logo">
+                    <i class="fa fa-leaf nav__logo-icon"></i> PLANTIVERSE</a>
+            </li>
+            <li class="nav_home">
+                <a href="index.html" class="nav__link">Home</a>
+            </li>
+            <li class="nav_products">
+                <a href="store.php" class="nav__link">Products</a>
+            </li>
+            <li class="nav_about">
+                <a href="aboutUs.html" class="nav__link active_link">About</a>
+            </li>
+            <li class="user_icon">
+                <a href="#"><i class="fa fa-user" data-icon="ri:account-box-fill"></i></a>
+            </li>
+            <li class="nav__item cart">
+                <a href="cart.html"><i class="active_cart_link ri-shopping-cart-line nav__link"
+                        aria-hidden="true"></i><span>0</span></a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <main class="main">
+
+        <form action="checkout.php" method="post" class="checkout_form">
+            <h2 style="padding-left:3%;">Please fill in your personal data below</h2>
+
+            <div class="column-holder">
+                <div class="column">
+                    <div class="input-text"> <input class="inputss" type="text" placeholder="abcd@gmail.com" name="email"> <span>Email:</span> </div>
+                    <div class="input-text"> <input class="inputss" type="text" placeholder="First Name" name="fname"> <span>First name:</span> </div>
+                </div>
+                <div class="column">
+                    <div class="input-text"> <input class="inputss" type="text" placeholder="123456789" name="phone"> <span>Phone:</span> </div>
+                    <div class="input-text"> <input class="inputss" type="text" placeholder="Last Name" name="lname"> <span>Last name:</span> </div>
+                </div>
+            </div>
+
+            <br>
+            <div class="billing" style="padding-left:1%;"> <h3>Billing Address:</h3>
+                <div class="input-text"> <input class="inputss" type="text" placeholder="Country" name="country"></div>
+                <div class="input-text"> <input class="inputss" type="text" placeholder="City" name="city"> </div>
+                <div class="address"> <input class="inputss" type="text" placeholder="Address" name="address"></div>
+                <div class="address"> <input class="inputss" type="text" placeholder="Street" name="street"></div>
+                <div class="address"><input class="inputss" type="text" placeholder="Postal Code" name="postcode"></div>
+            </div>
+
+            <input class="btn" style="width:80%;margin-left:3%;" type="submit" value="CheckOut"> <br><br><br><br><br><br><br><br><br>
+
+        </form>
+
+    </main>
+    
+
+    <!--=============== MAIN JS ===============-->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON META ICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!--=============== REMIX ICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== FAVICON ICONS ===============-->
+    <script src="https://kit.fontawesome.com/e48d166edc.js" crossorigin="anonymous"></script>
+
+
+    <!--=============== CSS ===============-->
+
+    <link rel="stylesheet" href="css/styles_phones.css">
+    <link rel="stylesheet" href="css/styles_tablets.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="images/LogoIcon.png">
+
+    <title>Plantiverse</title>
+</head>
+
+<body background="images/home.png" class="bg_img">
+
+    <!--==================== HEADER ====================-->
+    <nav class="nav">
+        <ul class="nav__list">
+            <li><a href="admin.html" class="nav__logo">
+                    <i class="fa fa-leaf nav__logo-icon"></i> PLANTIVERSE</a>
+            </li>
+            <li><a href="#"> </a>
+            <li><a href="#"> </a>
+            <li><a href="#"> </a>
+            <li><a href="warehouse.php"> Warehouse</a>
+            <li><a href="#"> </a>
+            <li><a href="#"> </a>
+            <li><a href="#"> </a>
+            <li><a href="warehouseEdit.php"> Edit Products</a>
+        </ul>
+    </nav>
+
+    <br><br><br><br>
+
+
+    <main class="main" style="margin-left: 100px;background-color:white;margin-right:100px;padding:20px; ">
+        <h1>Welcome Admin!</h1>
+        <h4>Add a product to your website easily below:</h4>
+        <form action="admin.php" method="POST">
+
+            <h3 class="fa fa-cog" aria-hidden="true"> General</h3>
+
+
+            <div class="general-inputs">
+                <input type="text" name="product_name" placeholder="Product Name">
+                <input type="text" name="product_botanical_name" placeholder="Botanical Name">
+                <input type="text" name="product_description" placeholder="Description">
+            </div>
+
+            <input type="number" step="any" name="product_price" placeholder="Price" id="num-price">
+            <input type="number" name="product_price_level" placeholder="Price Level" id="num-price">
+
+
+
+            <div class="img-tag">
+                <p>Product Thumbnail</p>
+                <p>Product Image 1</p>
+            </div>
+            <div class="img-col1">
+                <input type="file" name="product_thumbnail" placeholder="Thumbnail"><br>
+                <input type="file" name="product_img1" placeholder="Image 1"><br>
+            </div>
+
+            <div class="img-tag-2-3">
+                <p>Product Image 2</p>
+                <p>Product Image 3</p>
+            </div>
+
+            <div class="img-col-2-3">
+                <input type="file" name="product_img2" placeholder="Image 2">
+                <input type="file" name="product_img3" placeholder="Image 3">
+            </div>
+
+            <div class="category">
+                <input type="text" name="product_category" placeholder="Category">
+            </div><br>
+
+            <div class="row-split">
+                <div class="col-split">
+                    <h3 class="fas fa-dolly" aria-hidden="true"> Inventory</h3><br>
+                    <input class="inputss" type="number" name="product_availability" placeholder="Availability"
+                        id="num"><br><br>
+                    <input class="inputss" type="number" name="product_quantity" placeholder="Stock Quantity"
+                        id="num"><br><br>
+                    <input class="inputss" type="number" name="pot_quantity" placeholder="Pot Stock Quantity" id="num">
+                </div><br><br>
+
+                <div class="col-split">
+                    <h3 class="fas fa-tools" aria-hidden="true"> Variations</h2><br>
+
+                        <input class="inputss" type="text" name="variation_size" placeholder="Variation Size" id="text">
+                        <input class="inputss" type="text" name="variation_pot_material"
+                            placeholder="Variation Pot Material" id="text">
+                        <input class=" inputss" type="text" name="variation_pot_color" placeholder="Variation Pot Color"
+                            id="text">
+
+                </div>
+                <div class="col-split">
+                    <div class="btn-admin">
+                        <input class="btn-admin" type="submit" id="button">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <br><br><br><br><br>
+
+
+    <!--=============== MAIN JS ===============-->
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>
